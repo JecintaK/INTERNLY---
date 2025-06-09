@@ -1,6 +1,6 @@
 Welcome!
 
-Interly is a modern web platform designed to connect university and college students with verified internship opportunities. Our mission is to empower students by providing a central place to discover relevant, credible internships and career-launching experiences.
+Internly is a modern web platform designed to connect university and college students with verified internship opportunities. Our mission is to empower students by providing a central place to discover relevant, credible internships and career-launching experiences.
 
 Features
 
