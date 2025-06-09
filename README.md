@@ -9,6 +9,8 @@ Easy-to-navigate interface for browsing opportunities
 Simple onboarding and registration for students
 Fully responsive design – works on desktop and mobile
 Mission-driven platform designed with students in mind
+
+
 🛠️ Built With
 
 HTML5– Semantic, clean markup
