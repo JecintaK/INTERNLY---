@@ -20,6 +20,11 @@
       <div class="counter-box">
         <p id="visit-message"></p>
       </div>
+        <div class="theme-toggle">
+        <button id="theme-toggle-btn" class="theme-btn">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
       <div class="each"><a href="#mission-section">mission</a></div>
       <div class="each"><a href="#services-section">services</a></div>
       <div class="each"><a href="#testimonials-section">testimonials</a></div>
@@ -96,40 +101,88 @@
     </div>
   </div>
 
-  <div id="products-section">
+ <div id="products-section">
     <h2 class="title">Our products</h2>
 
-    <div class="carousel">
-      <div class="item">
-        <p><span style="color: rgb(130, 28, 174);">💼 Verified Internships</span></p>
-        <p class="text1">Access updated and vetted<br>
-          internship opportunities from<br>
-          trusted companies<br>
-          and organizations.<br></p>
-        <button class="button" id="button2">SIGN UP</button>
-        <div id="message2" class="message2"></div>
+    <div class="carousel-container">
+      <button class="carousel-btn prev-btn" id="prev-btn">❮</button>
+      
+      <div class="carousel-wrapper">
+        <div class="carousel" id="products-carousel">
+          <div class="carousel-item active">
+            <div class="item">
+              <p><span style="color: rgb(130, 28, 174);">💼 Verified Internships</span></p>
+              <p class="text1">Access updated and vetted<br>
+                internship opportunities from<br>
+                trusted companies<br>
+                and organizations.<br></p>
+              <button class="button" id="button2">SIGN UP</button>
+              <div id="message2" class="message2"></div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="item">
+              <p><span style="color: rgb(130, 28, 174);">📩 Student Profiles & Applications</span></p>
+              <p class="text1">Students create profiles, <br>
+                upload CVs, and apply to<br>
+                internships with just one <br>
+                click.<br></p>
+              <button class="button" id="button3">UPLOAD</button>
+              <div id="message3" class="message3"></div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="item">
+              <p><span style="color: rgb(130, 28, 174);">🏢 Company Dashboard</span></p>
+              <p class="text1">Companies manage listings,<br>
+                view applicants, and select<br>
+                the best-fit interns.<br>
+              </p>
+              <button class="button" id="button4">PARTNER</button>
+              <div id="message4" class="message4"></div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="item">
+              <p><span style="color: rgb(130, 28, 174);">🎯 Smart Matching</span></p>
+              <p class="text1">Our AI-powered system<br>
+                matches students with<br>
+                internships based on<br>
+                skills and preferences.<br></p>
+              <button class="button" id="button-extra1">EXPLORE</button>
+              <div id="message-extra1" class="message-extra1"></div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="item">
+              <p><span style="color: rgb(130, 28, 174);">📊 Analytics & Reports</span></p>
+              <p class="text1">Track your application<br>
+                progress and get insights<br>
+                on your internship<br>
+                search journey.<br></p>
+              <button class="button" id="button-extra2">VIEW STATS</button>
+              <div id="message-extra2" class="message-extra2"></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <p><span style="color: rgb(130, 28, 174);">📩 Student Profiles & Applications</span></p>
-        <p class="text1">Students create profiles, <br>
-          upload CVs, and apply to<br>
-          internships with just one <br>
-          click.<br></p>
-        <button class="button" id="button3">UPLOAD</button>
-        <div id="message3" class="message3"></div>
-      </div>
-      <div class="item">
-        <p><span style="color: rgb(130, 28, 174);">🏢 Company Dashboard</span></p>
-        <p class="text1">Companies manage listings,<br>
-          view applicants, and select<br>
-          the best-fit interns.<br>
-        </p>
-        <button class="button" id="button4">PARTNER</button>
-        <div id="message4" class="message4"></div>
-      </div>
+
+      <button class="carousel-btn next-btn" id="next-btn">❯</button>
+    </div>
+
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators" id="carousel-indicators">
+      <span class="indicator active" data-slide="0"></span>
+      <span class="indicator" data-slide="1"></span>
+      <span class="indicator" data-slide="2"></span>
+      <span class="indicator" data-slide="3"></span>
+      <span class="indicator" data-slide="4"></span>
     </div>
   </div>
-
   <div class="statistics">
     <div>
       <p class="emoji">👥</p>
