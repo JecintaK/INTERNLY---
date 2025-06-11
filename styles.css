@@ -154,7 +154,7 @@ body {
 }
 
 .hero-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/man-on-laptop.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/man on laptop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -806,4 +806,16 @@ html {
 
 .carousel-item {
   animation: fadeIn 0.5s ease-in-out;
+}
+
+
+.user-message {
+  text-align: right;
+  color: #4b0082;
+  margin: 5px 0;
+}
+.bot-message {
+  text-align: left;
+  color: #333;
+  margin: 5px 0;
 }

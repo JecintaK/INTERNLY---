@@ -246,6 +246,56 @@ document.addEventListener("DOMContentLoaded", () => {
     chatMessages.scrollTop = chatMessages.scrollHeight
   })
 
+
+// Chatbot functionality
+document.addEventListener('DOMContentLoaded', function () {
+  const chatForm = document.getElementById('chat-form');
+  const chatInput = document.getElementById('chat-input');
+  const chatMessages = document.getElementById('chat-messages');
+
+  if (chatForm && chatInput && chatMessages) {
+    chatForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const userMessage = chatInput.value.trim();
+      if (userMessage === '') return;
+
+      // Append user message
+      const userMsgElem = document.createElement('p');
+      userMsgElem.className = 'user-message';
+      userMsgElem.textContent = userMessage;
+      chatMessages.appendChild(userMsgElem);
+
+      // Simple bot reply (customize as needed)
+      const botMsgElem = document.createElement('p');
+      botMsgElem.className = 'bot-message';
+      botMsgElem.textContent = getBotReply(userMessage);
+      chatMessages.appendChild(botMsgElem);
+
+      // Scroll to bottom
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      // Clear input
+      chatInput.value = '';
+    });
+  }
+
+  // Simple bot reply logic
+  function getBotReply(message) {
+    // You can expand this logic for more advanced replies
+    if (message.toLowerCase().includes('internship')) {
+      return "We offer a variety of internships! What field are you interested in?";
+    }
+    if (message.toLowerCase().includes('apply')) {
+      return "You can apply directly through our platform. Would you like a link to the application page?";
+    }
+    return "Thank you for your message! We'll get back to you soon.";
+  }
+});
+
+
+
+
+
   // Keyboard navigation for carousel
   document.addEventListener("keydown", (e) => {
     if (e.key === "ArrowLeft") {
